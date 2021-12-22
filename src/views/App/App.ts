@@ -1,10 +1,10 @@
 import { Vue, Options } from 'vue-class-component';
-import Home from '@/views/Home/Home';
+import {Header} from '@/components/Header/Header';
 // Models
 @Options({
   name: 'App',
   template: require('./App.html'),
-  components: {Home
+  components: {Header
 
   },
 })

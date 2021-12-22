@@ -12,8 +12,4 @@ import { Options, Vue } from 'vue-class-component';
   template: require('./Header.html'),
   components: {},
 })
-export class IconButton extends Vue {
-  protected didClickOnButton(): void {
-    console.log('click');
-  }
-}
+export class Header extends Vue {}

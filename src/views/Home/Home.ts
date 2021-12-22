@@ -9,8 +9,4 @@ import { Options, Vue } from 'vue-class-component';
   components: {
   },
 })
-export default class Home extends Vue {
-  public created(): void {
-    console.log('home load');
-  }
-}
+export default class Home extends Vue {}
