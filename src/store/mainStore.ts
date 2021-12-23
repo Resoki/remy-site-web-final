@@ -1,8 +1,8 @@
 import { Module, VuexModule  } from 'vuex-module-decorators';
 @Module({
-  name: 'store',
+  name: 'mainStore',
   namespaced: true,
 })
 
 
-export default class LayoutDetailStore extends VuexModule {}
+export default class mainStore extends VuexModule {}

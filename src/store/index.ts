@@ -1,7 +1,7 @@
 import { createStore } from 'vuex';
 import { getModule } from 'vuex-module-decorators';
 
-import MainStore from './store';
+import MainStore from './mainStore';
 
 
 const store = createStore({
