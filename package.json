@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "node server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -14,13 +14,16 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "@kyvg/vue3-notification": "^2.3.4",
+    "@vue/cli": "^5.0.8",
     "@yzfe/svgicon": "^1.1.0",
     "@yzfe/vue3-svgicon": "^1.0.1",
     "axios": "^0.22.0",
     "ci": "^2.1.1",
+    "express": "^4.18.1",
     "joi": "^17.4.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
+    "serve-static": "^1.15.0",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-i18n": "^9.2.0-beta.16",
