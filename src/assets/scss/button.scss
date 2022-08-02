@@ -5,15 +5,15 @@ $color2: #1F3944;
 $color3: white;
 
 html {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;   
-    height: 100%;
-    width: 100%;
-    background-color: $color2;
-    -webkit-font-smoothing: antialiased;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
+  height: 100%;
+  width: 100%;
+  background-color: $color2;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
 }
 
 *, *:before, *:after {
@@ -52,7 +52,7 @@ html {
     transition: 0.3s ease-in-out;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
     span {
         text-transform: none;
         position: absolute;

@@ -1,0 +1,23 @@
+.btn-darkmode {
+  border: none;
+  background-color: grey;
+  opacity: 0.4;
+  width: 60px;
+  height: 48px;
+  border-radius: 12px;
+  cursor: pointer;
+  & img {
+    width: 30px;
+  }
+}
+
+.btn-darkmode:hover {
+  border: 1px solid black;
+}
+
+.btn-darkmode-active {
+  background-color: white;
+  opacity: 1;
+  @extend .btn-darkmode;
+  border-radius: 12px;
+}

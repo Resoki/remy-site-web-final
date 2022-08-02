@@ -59,28 +59,33 @@
   text-align: center;
 }
 
-.test {
+.mainBlock {
   margin: auto;
   border: 1px solid red;
   width: 60%;
   height: auto;
   background-color: #19323d;
-
-  & p {
+  p {
     font-size: 30px;
     font-weight: bold;
   }
-  & span {
+  span {
     color: #dd0030;;
   }
 }
 
+.mainBlock-darkMode {
+  @extend .mainBlock;
+  background-color: rgb(20, 20, 20) !important;
+  border-color: white;
+}
+
 @media screen and (max-width: 1024px)
 {
-    .test
-    {
-      width: 100%;
-    }
+  .test
+  {
+    width: 100%;
+  }
 }
 
 .container-btn {

@@ -8,11 +8,11 @@ const store = createStore({
   state: {},
   mutations: {},
   actions: {},
-  modules: {MainStore},
+  modules: {mainStore: MainStore},
 });
 
 export default store;
 
-export const keySettingsStore = (): MainStore =>
+export const mainStore = (): MainStore =>
   getModule(MainStore, store);
 

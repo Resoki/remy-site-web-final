@@ -5,8 +5,6 @@ import { Options, Vue } from 'vue-class-component';
 
 /** Models */
 
-
-
 @Options({
   name: 'ProjetButton',
   template: require('./ProjetButton.html'),
@@ -15,7 +13,6 @@ import { Options, Vue } from 'vue-class-component';
 export class ProjetButton extends Vue {
   protected isOpenProjet = false;
   protected openProjet(): void {
-    console.log('c');
     this.isOpenProjet = !this.isOpenProjet;
   }
 }

@@ -5,8 +5,6 @@ import { Options, Vue } from 'vue-class-component';
 
 /** Models */
 
-
-
 @Options({
   name: 'ContactButton',
   template: require('./ContactButton.html'),

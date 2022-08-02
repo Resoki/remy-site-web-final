@@ -7,8 +7,6 @@ import Home from '../../views/Home/Home';
 @Options({
   name: 'App',
   template: require('./App.html'),
-  components: {ContainerHome,Network, Home
-
-  },
+  components: { ContainerHome, Network, Home },
 })
 export class App extends Vue {}
