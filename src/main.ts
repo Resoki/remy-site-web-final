@@ -16,9 +16,7 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 library.add(faUserSecret, faLinkedin, faGithub, faDiscord);
 
-
 import './assets/scss/main.scss';
-
 
 createApp(App)
   .use(store)
