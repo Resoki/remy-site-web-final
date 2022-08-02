@@ -8,8 +8,8 @@ import { Options, Vue } from 'vue-class-component';
 
 
 @Options({
-  name: 'Header',
-  template: require('./Header.html'),
+  name: 'Network',
+  template: require('./Network.html'),
   components: {},
 })
-export class Header extends Vue {}
+export class Network extends Vue {}

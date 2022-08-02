@@ -1,0 +1,19 @@
+<div class="container-home">
+  <button @click="previousSlide()"><</button>
+
+  <div class="slide-container" v-if="currentSlide === 0">
+    <p style="color: white">Le dev, un metier mais avant tout une passion. Actuellement en alternance au sein du Groupe LDLC. Je dev principalement en Javascript/Typescript</p>
+    <img src="https://images.assetsdelivery.com/compings_v2/gmast3r/gmast3r1604/gmast3r160400551.jpg"/>
+  </div>
+
+  <div class="slide-container" v-if="currentSlide === 1">
+    <p style="color: white">Grâce à ses langague je suis en mesure de développer des sites web/applications via le framework Vue JS. Je réalise également le developpement de bot Discord en Freelance</p>
+    <img src="https://serokell.io/files/0u/0ufu1q21.js-ts.jpg"/>
+  </div>
+
+  <div class="slide-container" v-if="currentSlide === 2">
+    <p style="color: white">sdgggds</p>
+  </div>
+
+  <button @click="nextSlide()">></button>
+</div>
