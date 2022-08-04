@@ -15,7 +15,7 @@ const db = mysql.createConnection({
   database : 'heroku_c4c47c6c7b2fa8c'
 });
 
-export const connectDb = async () => {
+const connectDb = async () => {
   await db.connect(()=> {
     console.log('Connected a la bdd !');
   });
