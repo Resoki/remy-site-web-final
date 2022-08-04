@@ -4,7 +4,7 @@ import { Options, Vue } from 'vue-class-component';
 /** Components */
 
 /** Models */
-import { postContact } from '@/request/userRoutes';
+
 @Options({
   name: 'ContactButton',
   template: require('./ContactButton.html'),
@@ -41,6 +41,6 @@ export class ContactButton extends Vue {
   }
 
   protected postData(name: string, email: string, message: string): void {
-    postContact(name,email,message);
+    // postContact(name,email,message);
   }
 }
