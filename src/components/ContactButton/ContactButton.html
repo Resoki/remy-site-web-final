@@ -26,17 +26,25 @@
 </a>
 
 <div class="formulaire" v-if="isOpenContactForm">
-  <form>
+  <form
+  @submit.prevent="onSubmitForm()">
     <button class="cross" @click="openContactForm()">X</button>
-    <input name="name" type="text" class="feedback-input" placeholder="Nom" />
+    <p v-if="dataForm.errors.length>0">
+      <ul>
+        <li v-for="error in dataForm.errors">{{ error }}</li>
+      </ul>
+    </p>
+    <input name="name" v-model="dataForm.name" type="text" class="feedback-input" placeholder="Nom" />
     <input
+      v-model="dataForm.email"
       name="email"
-      type="text"
+      type="email"
       class="feedback-input"
       placeholder="Email"
     />
     <textarea
-      name="text"
+      v-model="dataForm.message"
+      name="message"
       class="feedback-input"
       placeholder="Message"
     ></textarea>
