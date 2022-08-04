@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-import mysql from 'mysql';
+const mysql = require('mysql');
 const db = mysql.createConnection({
     host     : 'eu-cdbr-west-03.cleardb.net',
     user     : 'b69ef91eba2cc7',
