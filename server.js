@@ -6,7 +6,7 @@ app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 app.listen(port)
 console.log(`Listening ${port}`)
-const {db} = require('./src/db');
+import {db} from' ./src/db';
 
 const connectDb = async () => {
   await db.connect(()=> {
