@@ -36,7 +36,7 @@ export class ContactButton extends Vue {
       this.dataForm.errors.push('-Message requis');
     }
     if(this.dataForm.name && this.dataForm.email && this.dataForm.message) {
-      // this.postData(this.dataForm.name, this.dataForm.email, this.dataForm.message);
+       this.postData(this.dataForm.name, this.dataForm.email, this.dataForm.message);
     }
   }
 
