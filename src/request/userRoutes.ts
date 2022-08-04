@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     password : '5e9fc496',
     database : 'heroku_c4c47c6c7b2fa8c'
 });
-  
+
 export const postContact = (name: string, email: string, message: string): void =>{
   const sql = `INSERT INTO contact (name,email,message) VALUES('${name}', '${email}', '${message}')`;
   db.query(sql, (err: any, result: any)=> {

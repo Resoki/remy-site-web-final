@@ -1,9 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import { Options, Vue } from 'vue-class-component';
 import { postContact } from '@/request/userRoutes';
-/** Components */
-
-/** Models */
 
 @Options({
   name: 'ContactButton',
