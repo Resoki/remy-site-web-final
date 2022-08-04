@@ -9,7 +9,9 @@ const db = mysql.createConnection({
 });
 
 export const connectDb = async (): Promise<void> => {
-  await db.connect();
+  await db.connect(()=> {
+    console.log('Connected a la bdd !');
+  });
   setInterval(async () => {
     await db.query('SELECT 1', (err: any, result: any)=> {
       if(err){
