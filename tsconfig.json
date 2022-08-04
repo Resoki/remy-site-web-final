@@ -19,6 +19,6 @@
     "lib": ["esnext", "es5", "es2015", "dom", "dom.iterable", "scripthost"],
     "useDefineForClassFields": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.html"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.html", "src/db.js", "src/request/userRoutes.js"],
   "exclude": ["node_modules", "src/assets/images/**/*"]
 }
