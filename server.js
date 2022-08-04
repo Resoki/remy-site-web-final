@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 
 
-const userRoutes = require('./src/request/userRoutes');
+const userRoutes = require('./src/Models/userModel');
 app.use(express.static(__dirname + '/public'));
 
 
