@@ -1,6 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import { Options, Vue } from 'vue-class-component';
-
+import { postContact } from '@/request/userRoutes';
 /** Components */
 
 /** Models */
@@ -41,6 +41,6 @@ export class ContactButton extends Vue {
   }
 
   protected postData(name: string, email: string, message: string): void {
-    // postContact(name,email,message);
+     postContact(name,email,message);
   }
 }

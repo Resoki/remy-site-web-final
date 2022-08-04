@@ -30,3 +30,5 @@ const connectDb = async () => {
 };
 
 connectDb()
+
+module.exports = {db}
