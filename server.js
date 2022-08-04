@@ -28,3 +28,5 @@ const connectDb = async () => {
     });
   }, 5000);
 };
+
+connectDb()
