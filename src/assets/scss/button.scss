@@ -1,14 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
 
-$color1: #EE283E;
-$color2: #1F3944;
+$color1: #ee283e;
+$color2: #1f3944;
 $color3: white;
 
 html {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;   
+  justify-content: center;
   height: 100%;
   width: 100%;
   background-color: $color2;
@@ -16,85 +15,85 @@ html {
   font-size: 18px;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 .icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	fill: currentColor;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 .icon-paperplane {
-    font-size: 1em;
-    color: $color3;
-    margin-left: 1px;
-    margin-top: 5px;
+  font-size: 1em;
+  color: $color3;
+  margin-left: 1px;
+  margin-top: 5px;
 }
 
 .contact-button {
-    cursor: pointer;
-    position: relative;
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform:translate3d(0,0,0);
-    color: $color3;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 0.92em;
-    border: 2px solid $color3;
-    border-radius: 4px;
-    padding: 20px 60px 20px 55px;
-    transition: 0.3s ease-in-out;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: $color3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 0.92em;
+  border: 2px solid $color3;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    span {
-        text-transform: none;
-        position: absolute;
-        color: $color1;
-        top: 20px;
-        left: 30px;
-        opacity: 0;
-        transition: all 0s ease 0s;
+  span {
+    text-transform: none;
+    position: absolute;
+    color: $color1;
+    top: 20px;
+    left: 30px;
+    opacity: 0;
+    transition: all 0s ease 0s;
+  }
+  &:hover {
+    transition: 0.3s ease-in-out;
+    border: 2px solid $color3;
+    border-radius: 50px;
+    background-color: $color3;
+
+    & > span {
+      opacity: 1;
+      transition: all 0.25s ease-in-out 0.1s;
     }
-    &:hover {
-        transition: 0.3s ease-in-out;
-        border: 2px solid $color3;
-        border-radius: 50px;
-        background-color: $color3;
-        
-        &>span {
-            opacity: 1;
-            transition: all 0.25s ease-in-out 0.1s;
-        }
-        
-        &:before {
-            transition: 0.3s ease-in-out;
-            background-color: $color1;
-        }
+
+    &:before {
+      transition: 0.3s ease-in-out;
+      background-color: $color1;
     }
-    
+  }
 }
 
 .inspiration {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: lighten($color2, 25%);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: lighten($color2, 25%);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
 }
-
 
 #remy-pdp {
   width: 200px;
@@ -102,10 +101,9 @@ html {
   margin-bottom: 40px;
 }
 
-
 //Contact Button
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -118,7 +116,6 @@ html {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
 
 .wrapper {
   display: inline-flex;
@@ -159,7 +156,7 @@ html {
 
 .wrapper .tooltip::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 8px;
   width: 8px;
   background: #ffffff;
@@ -184,7 +181,7 @@ html {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
+  background: #1877f2;
   color: #ffffff;
 }
 
@@ -198,7 +195,7 @@ html {
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+  background: #e4405f;
   color: #ffffff;
 }
 
@@ -212,7 +209,7 @@ html {
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
+  background: #cd201f;
   color: #ffffff;
 }
 
