@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require('express');
 var app = express();
 const mysql = require('promise-mysql');
@@ -64,7 +65,6 @@ const PORT = process.env.PORT || 9000;
 app.listen(PORT, function(err){
     console.log('listen port ' + PORT);
 })
-
 
 const connectDb = async () => {
   await db.connect(()=> {
