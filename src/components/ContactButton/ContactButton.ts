@@ -3,9 +3,9 @@ import { Options, Vue } from 'vue-class-component';
 import {saveContact} from '../../Api/saveContact';
 
 interface typeDataContact {
-  name: string,
-  email: string,
-  message: string
+  name: string;
+  email: string;
+  message: string;
 }
 
 @Options({
@@ -43,12 +43,12 @@ export class ContactButton extends Vue {
     }
   }
 
-  protected postData = async(name: string, email: string, message: string) =>{
-    let data:typeDataContact ={
+  protected postData = async (name: string, email: string, message: string) =>{
+    const data: typeDataContact ={
       name,
       email,
       message
-    }
+    };
     await saveContact(data);
-  }
+  };
 }

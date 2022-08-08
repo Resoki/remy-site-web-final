@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require('express');
 var app = express();
 const mysql = require('promise-mysql');
@@ -40,7 +39,6 @@ mysql.createConnection({
             if(err){
                throw err;
             }
-            console.log(result);
           });
         }, 5000);
       })
