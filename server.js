@@ -30,8 +30,6 @@ mysql.createConnection({
 }).then((db)=>{
 // respond with "hello world" when a GET request is made to the homepage
     console.log('connecté');
-    app.get('/', function(req, res) {
-        res.json({status: 200, msg: 'ok'});
         setInterval(async () => {
           await db.query('SELECT 1', (err, result)=> {
             if(err){
@@ -39,7 +37,7 @@ mysql.createConnection({
             }
           });
         }, 5000);
-      })
+  
       userRoutes(db);
 })
 
