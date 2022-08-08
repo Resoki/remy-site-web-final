@@ -10,6 +10,8 @@ const port = '3306'
 
 const userRoutes = require('./src/Models/userModel');
 
+app.use(express.static(path.join("/dist")));
+
 mysql.createConnection({
     host     : host,
     user     : user,
