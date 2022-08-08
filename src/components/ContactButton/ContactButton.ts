@@ -1,6 +1,13 @@
 // eslint-disable-next-line max-classes-per-file
 import { Options, Vue } from 'vue-class-component';
 import {saveContact} from '../../Api/saveContact';
+
+interface typeDataContact {
+  name: string,
+  email: string,
+  message: string
+}
+
 @Options({
   name: 'ContactButton',
   template: require('./ContactButton.html'),
@@ -36,12 +43,12 @@ export class ContactButton extends Vue {
     }
   }
 
-  protected postData(name: string, email: string, message: string): void {
-    const data = {
+  protected postData = async(name: string, email: string, message: string) =>{
+    let data:typeDataContact ={
       name,
       email,
       message
-    };
-      saveContact(data);
+    }
+    await saveContact(data);
   }
 }

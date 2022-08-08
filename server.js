@@ -47,6 +47,18 @@ mysql.createConnection({
 })
 
 
+app.get('/post/contact', function(req, res) {
+  res.json({status: 200, msg: 'ok'});
+  setInterval(async () => {
+    await db.query('SELECT 1', (err, result)=> {
+      if(err){
+        console.log('contact')
+         throw err;
+      }
+      console.log(result);
+    });
+  }, 5000);
+})
 
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, function(err){
