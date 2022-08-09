@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
   password : process.env.PASSWORD
 })
 
-await connection.connect();
+connection.connect();
 setInterval(async()=> {
   await connection.query('SELECT 1', function(err, rows, fields) {
     if (err) throw err;
