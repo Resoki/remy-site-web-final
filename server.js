@@ -35,6 +35,15 @@ mysql.createConnection({
     app.get('/', function(req, res) {
         res.json({status: 200, msg: 'ok'})
       })
+    
+      setInterval(()=> {
+        db.query('SELECT 1', (res,err)=> {
+          if(err){
+            return err
+          }
+          console.log(res)
+        })
+      }, 4000)
 
     userRoutes(app, db)
 })
