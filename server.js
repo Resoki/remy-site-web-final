@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const mysql = require('mysql');
+const mysql = require('promise-mysql');
 const connection = mysql.createConnection({
   host     : process.env.HOST,
   user     : process.env.USER,
@@ -9,6 +9,7 @@ const connection = mysql.createConnection({
 })
 
 connection.connect().then(()=> {
+  console.log('connecté à la bdd ')
   setInterval(async()=> {
     await connection.query('SELECT 1', function(err, rows, fields) {
       if (err) throw err;
