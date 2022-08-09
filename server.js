@@ -28,8 +28,6 @@ mysql.createConnection({
     password : password,
     port: port
 }).then((db)=>{
-    
-
 // respond with "hello world" when a GET request is made to the homepage
     console.log('connecté');
     app.get('/', function(req, res) {
