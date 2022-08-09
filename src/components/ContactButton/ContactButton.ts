@@ -1,8 +1,5 @@
 // eslint-disable-next-line max-classes-per-file
 import { Options, Vue } from 'vue-class-component';
-import { QuickDB } from 'quick.db';
-const db = new QuickDB();
-
 @Options({
   name: 'ContactButton',
   template: require('./ContactButton.html'),
@@ -39,11 +36,7 @@ export class ContactButton extends Vue {
   }
 
   protected postData = async (name: string, email: string, message: string) =>{
-     await db.push('ContactList', {
-      userName: name,
-      userEmail: email,
-      userMessage: message,
-     });
+
    //  await saveContact(name, email, message);
   };
 }
