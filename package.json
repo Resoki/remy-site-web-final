@@ -25,6 +25,7 @@
     "mysql": "^2.18.1",
     "nprogress": "^0.2.0",
     "promise-mysql": "^5.2.0",
+    "quick.db": "^9.0.6",
     "serve-static": "^1.15.0",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",

@@ -1,12 +1,7 @@
 // eslint-disable-next-line max-classes-per-file
 import { Options, Vue } from 'vue-class-component';
-import {saveContact} from '../../Api/saveContact';
-
-interface typeDataContact {
-  name: string;
-  email: string;
-  message: string;
-}
+import { QuickDB } from 'quick.db';
+const db = new QuickDB();
 
 @Options({
   name: 'ContactButton',
@@ -39,16 +34,16 @@ export class ContactButton extends Vue {
       this.dataForm.errors.push('-Message requis');
     }
     if(this.dataForm.name && this.dataForm.email && this.dataForm.message) {
-       this.postData(this.dataForm.name, this.dataForm.email, this.dataForm.message);
+       void this.postData(this.dataForm.name, this.dataForm.email, this.dataForm.message);
     }
   }
 
   protected postData = async (name: string, email: string, message: string) =>{
-    const data: typeDataContact ={
-      name,
-      email,
-      message
-    };
-    await saveContact(data);
+     await db.push('ContactList', {
+      userName: name,
+      userEmail: email,
+      userMessage: message,
+     });
+   //  await saveContact(name, email, message);
   };
 }
