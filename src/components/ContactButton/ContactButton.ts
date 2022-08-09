@@ -36,7 +36,6 @@ export class ContactButton extends Vue {
   }
 
   protected postData = async (name: string, email: string, message: string) =>{
-
-   //  await saveContact(name, email, message);
+   // await saveContact(name, email, message);
   };
 }
